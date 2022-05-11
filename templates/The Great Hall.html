@@ -6,23 +6,104 @@
 
 {% block content %}
 <h1 class="p-3">The Great Hall</h1>
-<div class="container mt-5">
-    <div class="row">
-        <div class="col-sm-4">
-          <h3>Column 1</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-          <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
-        </div>
-        <div class="col-sm-4">
-          <h3>Column 2</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-          <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
-        </div>
-        <div class="col-sm-4">
-          <h3>Column 3</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-          <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+<div class="row px-3">
+    <div class="col-md">
+        <h3>Location</h3>
+        <p>Situated in Sydney Boys High School on <B>556 Cleveland St, Moore Park NSW 2021,</B> the great hall is adjacent to Fox Studios and fashionable Crown & Bourke Streets. </p>
+        <h3>Public Transportation</h3>
+        <p>Public transportation to and from The Great Hall is quite convenient, with <b>bus stops</b> on both <b>Cleveland Street and Anzac Pde,</b> directly next to the location. There is also a <b>Light Rail</b> stop right next to the location, <b>Moore Park Light Rail stop.</b></p>
+    </div>
+    <div class="col-sm">
+        <iframe class="pb-4" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3103.1892461886737!2d151.21942069999997!3d-33.8930523!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b12b1e29ae9ec25%3A0x54e0a1ec5131e8dc!2sSydney%20Boys%20High%20School!5e1!3m2!1sen!2sau!4v1652259047996!5m2!1sen!2sau" width="500" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+</div>
+<div class="row px-3 pt-5">
+    <div class="col-sm px-4 pb-4">
+        <img src="https://www.sydneyboyshigh.com/images/stories/venuehire/greathall-courtyard1.jpg" height="400">
+    </div>
+    <div class="col-lg">
+        <h3>Features</h3>
+        <p>Outside the hall on the west side there is a <b>charming, enclosed garden</b> with colonnades which provide the perfect setting for <b>pre-dinner cocktails</b> and has ample space for <b>a bar and live music.</b> On the east side of The Great Hall a balcony runs the length of the Hall with <b>garden views.</b></p>
+        <p>Features include:</p>
+        <div class="row">
+            <div class="col">
+                <ul style="margin-top: 0">
+                    <li>Place of Public Entertainment Licence</li>
+                    <li>Disabled access </li>
+                    <li>72 square metre stage </li>
+                    <li>No noise restrictions </li>
+                    <li>Sound system </li>
+                    <li>Grand piano </li>
+                    <li>ample chairs for any event </li>
+                    <li>Heating </li>
+                </ul>
+            </div>
+            <div class="col">
+                <ul style="margin-top: 0">
+                    <li>Large, tiered gallery level</li>
+                    <li>Projection room overlooking the Hall and stage</li>
+                    <li>Kitchen facility </li>
+                    <li>Break out rooms for large conferences or conventions </li>
+                    <li>20 x 6’ round banquet tables</li>
+                </ul>
+            </div>
         </div>
     </div>
+</div>
+<div class="p-3">
+    <h3>Parking</h3>
+    <p class="pb-4">Vehicular access is from the Sir Roden Cutler Gates (Gate 9) Anzac Parade, Surry Hills. There are ample parking spots subject to approval from the Venues Manager for use. </p>
+    <h3>Catering</h3>
+    <p>There are two main caters available, Family Affair catering, and Kam Sing Restaurant Catering</p>
+    <div class="row">
+        <div class="col">
+            <h5 class="pb-2">Family Affair catering</h5>
+            <p style="font-size: 15px;"><b>Contact:</b> Mr Greg Northover</p>
+            <p style="font-size: 15px;"><b>Address:</b> 1/11 Brennan Close, Asquith NSW 2077</p>
+            <p style="font-size: 15px;"><b>Phone:</b> (02) 9476 1255</p>
+            <p style="font-size: 15px;"><b>Fax:</b> (02) 9477 7152</p>
+            <p style="font-size: 15px;"><b>Website:</b> <a href="http://www.familyaffaircatering.com.au/">http://www.familyaffaircatering.com.au/</a></p>
+        </div>
+        <div class="col">
+            <h5 class="pb-2">Kam Sing Restaurant </h5>
+            <p style="font-size: 15px;"><b>Contact:</b> Mr Samson Lou</p>
+            <p style="font-size: 15px;"><b>Address:</b> 3A Chatham Road, West Ryde NSW 2114</p>
+            <p style="font-size: 15px;"><b>Phone:</b> 0425 308 539</p>
+            <p style="font-size: 15px;"><b>Website:</b> <a href="https://sites.google.com/site/kamsingrestaurant/catering">https://sites.google.com/site/kamsingrestaurant/catering</a></p>
+        </div>
+    </div>
+    <p class="pb-4">
+        Should a different caterer be required, please contact the great hall venue manager, accessible from the contact page
+    </p>
+    <h3>
+        Venue Specifications & Capacity
+    </h3>
+    <p>Floor plans and dimensions are available here:</p>
+</form>
+    <p>Floor Plan - Exhibition (325 square metres):</p>
+    <a class="btn btn-danger" role="button" href={{ url_for("static", filename="SBHSGreatHall-Dimensions.pdf") }}
+       download="SBHSGreatHall-Dimensions">
+       Download
+    </a>
+    <p>Floor Configuration - Dinner (up to 280 pax):</p>
+    <a class="btn btn-danger" role="button" href={{ url_for("static", filename="SBHSGreatHall-DinnerConfig.pdf") }}
+       download="SBHSGreatHall-DinnerConfig">
+       Download
+    </a>
+    <p>Floor Configuration - Dinner with dance floor (up to 250 pax):</p>
+    <a class="btn btn-danger" role="button" href={{ url_for("static", filename="SBHSGreatHall-DinnerConfigWithDance.pdf") }}
+       download="SBHSGreatHall-DinnerConfigWithDance">
+       Download
+    </a>
+    <p>Floor Configuration - Theatre Style with one aisle (up to 720 pax):</p>
+    <a class="btn btn-danger" role="button" href={{ url_for("static", filename="SBHSGreatHall-TheatreStyleConfigOneAisle.pdf") }}
+       download="SBHSGreatHall-TheatreStyleConfigOneAisle">
+       Download
+    </a>
+    <p>Floor Configuration - Theatre Style with two aisle (up to 300 pax):</p>
+    <a class="btn btn-danger" role="button" href={{ url_for("static", filename="SBHSGreatHall-TheatreStyleConfigTwoAisles.pdf") }}
+       download="SBHSGreatHall-TheatreStyleConfigTwoAisles">
+       Download
+    </a>
 </div>
 {% endblock %}

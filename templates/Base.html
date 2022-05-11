@@ -8,11 +8,39 @@
         {% block title %} {% endblock %}
     </title>
 </head>
-<body style="background-color: #d2d7d2">
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<!--hide scroll bar from w3schools-->
+<style>
+.noscroll {
+  overflow-y: scroll; /* Add the ability to scroll */
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.noscroll::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.noscroll {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+p {
+  font-size: 20px;
+}
+
+/* hides the hyperlink-auto formatting*/
+a:hover, a:active,a {
+  text-decoration: none;
+  color: inherit;
+}
+</style>
+
+<body class="noscroll" style="background-color: #e0e3e0">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <div class="p-2">
           <a class="navbar-brand" href="https://www.sydneyboyshigh.com/">
-              <img src={{ url_for("static", filename="SBHS.svg") }} alt="" width="35" height="35">
+              <img src={{ url_for("static", filename="SBHS.svg") }} width="35" height="35">
           </a>
       </div>
       <div class="p-2">
@@ -35,7 +63,7 @@
               <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
                 <span class="p-2">Venues</span>
               </a>
-              <div class="dropdown-menu dropdown-menu-dark">
+              <div class="dropdown-menu dropdown-menu-light">
                 <a class="dropdown-item" href="thegreathall">The Great Hall</a>
                 <a class="dropdown-item" href="fairlandpavilion">Fairland Pavilion</a>
                 <a class="dropdown-item" href="theottersidecentre">The Otterside Centre</a>

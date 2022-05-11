@@ -5,23 +5,86 @@
 {% endblock %}
 
 {% block content %}
-<h1 class="p-3">Home</h1>
-<div class="container mt-5">
+<h1 class="p-3 pb-0">Home</h1>
+
+<!-- custom style -->
+<style>
+
+a:hover, a:active,a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.clickable:hover{
+    background-color: #a9a9c5;
+}
+
+</style>
+
+<div class="px-2 pt-0">
     <div class="row">
-        <div class="col-sm-4">
-          <h3>Column 1</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-          <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+        <div class="col-sm pb-4">
+            <div class="clickable p-3">
+                <a href="thegreathall">
+                    <h3>The Great Hall</h3>
+                    <div class="row">
+                        <div class="col-sm">
+                          <img src="https://www.sydneyboyshigh.com/images/stories/venuehire/greathall-exterior1.jpg" width="330">
+                        </div>
+                        <div class="col-sm">
+                          <p>The Great Hall is situated in Sydney's Eastern Suburbs, less than 5km from the CBD. Built in 1927, this grand hall with its 7.5 metre ceilings and tranquil cloisters provides an affordable venue in a prime location.</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
         </div>
-        <div class="col-sm-4">
-          <h3>Column 2</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-          <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+        <div class="col-sm pb-4">
+            <div class="clickable p-3">
+                <a href="fairlandpavilion">
+                    <h3>Fairland Pavilion</h3>
+                    <div class="row">
+                        <div class="col-sm">
+                          <img src="https://www.sydneyboyshigh.com/images/stories/venuehire/fairland1.jpg" height="169">
+                        </div>
+                        <div class="col-sm">
+                            <p>Set in the lush surrounds of Centennial Park, in the Eastern Suburbs, Fairland Pavilion is a versatile and informal venue that offers a relaxed atmosphere perfect for casual gatherings. </p>
+                        </div>
+                    </div>
+                </a>
+            </div>
         </div>
-        <div class="col-sm-4">
-          <h3>Column 3</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-          <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+    </div>
+    <div class="row ">
+        <div class="col-sm pb-4">
+            <div class="clickable p-3">
+                <a href="theottersidecentre">
+                    <h3>The Otterside Centre</h3>
+                    <div class="row">
+                        <div class="col-sm">
+                          <img src="https://www.sydneyboyshigh.com/images/stories/venuehire/abbotsford-balcony1.jpg" height="169" alt="">
+                        </div>
+                        <div class="col-sm">
+                          <p>Located on stunning water frontage in Sydney’s inner west, The Outterside Centre has breathtaking 180 degree water views and glimpses of the Harbour Bridge.  </p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="col-sm">
+            <div class="clickable p-3">
+                <a href="utsgymnasium">
+                    <h3>UTS Gymnasium</h3>
+                    <div class="row">
+                        <div class="col-sm">
+                          <img src="https://www.sydneyboyshigh.com/images/stories/venuehire/gym2.jpg" height="169">
+                        </div>
+                        <div class="col-sm">
+                          <p>The UTS-Sydney Boys High School Stadium is located on the Sydney Boys High School main campus, set within the grounds of Moore Park.</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
         </div>
     </div>
 </div>
