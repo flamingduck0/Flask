@@ -12,6 +12,8 @@
     min-width: 460px;
   }
 </style>
+
+
 <h3 class="px-3">The Great Hall</h3>
 <div>
     <form method="post">
@@ -23,6 +25,11 @@
                     <label for="days" class="form-label" style="font-size: small">Venue hire for the great hall can only be booked in 24 hr periods, $1750 per 24 hrs.</label>
                 </div>
                 <div class="px-3">
+                    <p>How many hours will you need a technician for?</p>
+                    <input type="number" class="form-control" min="0" max="1000" name="tech" autofocus></input>
+                    <label for="tech" class="form-label" style="font-size: small">$35 per hour, minimum 1 hour hire, set 0 if not required</label>
+                </div>
+                <div class="px-3">
                     <p>How many microphones will you need?</p>
                     <input type="number" class="form-control" min="0" max="20" name="mics" autofocus></input>
                     <label for="mics" class="form-label" style="font-size: small">Max 20 mics, $50 per mic.</label>
@@ -30,53 +37,63 @@
                 <div class="px-3">
                     <p>How many classrooms will you need?</p>
                     <input type="number" class="form-control" min="0" max="20" name="rooms" autofocus></input>
-                    <label for="rooms" class="form-label" style="font-size: small">Can only be hired if hall is hired, $10/hr per classroom</label>
+                    <label for="rooms" class="form-label" style="font-size: small">Can only be hired if hall is hired, $10/hr per classroom, max 20 classrooms</label>
+                </div>
+                <div class="px-3">
+                    <p>For how many hours will you need the classrooms?</p>
+                    <input type="number" class="form-control" min="0" max="20" name="roomtime" autofocus></input>
+                    <label for="roomtime" class="form-label" style="font-size: small">what is the duration of the usage of the the classrooms </label>
                 </div>
                 <div class="px-3">
                     <p>How many basketball courts will you need?</p>
                     <input type="number" class="form-control" min="0" max="10" name="courts" autofocus></input>
-                    <label for="courts" class="form-label" style="font-size: small">Venue hire for the great hall can only be booked in 24 hr periods</label>
+                    <label for="courts" class="form-label" style="font-size: small">$20 per court per hour (minimum 4 hours hire)</label>
+                </div>
+                <div class="px-3">
+                    <p>For how many hours will you need the basketball courts?</p>
+                    <input type="number" class="form-control" min="4" max="20" name="courttime" autofocus></input>
+                    <label for="courttime" class="form-label" style="font-size: small">what is the duration of the usage of the the basketball courts </label>
+                </div>
+                <div class="px-3">
+                    <p>For how many hours will you need the bbq shed?</p>
+                    <input type="number" class="form-control" min="4" max="20" name="bbqtime" autofocus></input>
+                    <label for="bbqtime" class="form-label" style="font-size: small">what is the duration of the usage of the bbq shed </label>
                 </div>
                 <div class="px-3">
                     <p>How many parking spots will you need?</p>
                     <input type="number" class="form-control" min="0" max="3000" name="spots" autofocus></input>
-                    <label for="spots" class="form-label" style="font-size: small">Venue hire for the great hall can only be booked in 24 hr periods</label>
-                </div>x
+                    <label for="spots" class="form-label" style="font-size: small">$10 per car + $1000 (per 24 hour period)</label>
+                </div>
             </div>
             <div class="col-3">
                 <div class="px-3">
                     <p>Pay for Cleaning?
                         <input type="checkbox" name="cleaning" autofocus></input>
-                        <label for="cleaning" class="form-label" style="font-size: small">If great hall is left in unsatisfactory state, you may incur this fee</label>
+                        <label for="cleaning" class="form-label" style="font-size: small">$240, If great hall is left in unsatisfactory state, you may incur this fee</label>
                     </p>
                 </div>
                 <div class="px-3">
                     <p>Pay for barbeque shed?
                         <input type="checkbox" name="bbq" autofocus></input>
-                        <label for="bbq" class="form-label" style="font-size: small">If great hall is left in unsatisfactory state, you may incur this fee</label>
-                    </p>
-                </div>
-                <div class="px-3">
-                    <p>Pay for Technician?
-                        <input type="checkbox" name="tech" autofocus></input>
-                        <label for="tech" class="form-label" style="font-size: small">If great hall is left in unsatisfactory state, you may incur this fee</label>
+                        <label for="bbq" class="form-label" style="font-size: small">Clean up afterwards, there is no cleaning fees or additional parking fees, $25 per hour, minimum 4 hr hire</label>
                     </p>
                 </div>
                 <div class="px-3">
                     <p>Pay for Kitchen?
                         <input type="checkbox" name="kitchen" autofocus></input>
-                        <label for="kitchen" class="form-label" style="font-size: small">If great hall is left in unsatisfactory state, you may incur this fee</label>
+                        <label for="kitchen" class="form-label" style="font-size: small">Kitchen should be left clean and tidy after it has been used, extra $500</label>
                     </p>
                 </div>
                 <div class="px-3">
                     <p>Pay for classroom AV?
                         <input type="checkbox" name="av" autofocus></input>
-                        <label for="av" class="form-label" style="font-size: small">If great hall is left in unsatisfactory state, you may incur this fee</label>
+                        <label for="av" class="form-label" style="font-size: small">Additional $5 per hour per classroom</label>
                     </p>
                 </div>
+                <b class="p-5"><p>DO NOT ASK FOR A DISCOUNT!</p></b>
             </div>
         </div>
-        <div class="p-1"><button type="submit" class="btn btn-primary">Submit</button></div>
+        <div class="p-3"><button type="submit" class="btn btn-primary">Submit</button></div>
     </form>
 </div>
 {% endblock %}
