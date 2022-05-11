@@ -15,14 +15,17 @@ def home_page():  # put application's code here
 @app.route('/quotes', methods=['GET', 'POST'])
 def quotes_page():  # put application's code here
     if request.method == 'POST':
-        adults = int(request.form['numAdults'])
-        children = int(request.form['numChildren'])
-        total = totalCost(adults, children)
-        return render_template('Result.html',
-                               adults=adults,
-                               children=children,
-                               total=total
-                               )
+        try:
+            adults = int(request.form['numAdults'])
+            children = int(request.form['numChildren'])
+            total = totalCost(adults, children)
+            return render_template('Result.html',
+                                   adults=adults,
+                                   children=children,
+                                   total=total
+                                   )
+        except Exception:
+            pass
     return render_template('Quotes.html')
 
 

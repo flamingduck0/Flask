@@ -5,18 +5,24 @@
 {% endblock %}
 
 {% block content %}
-<div class="container-fluid">
-    <h1>Quotes</h1>
+<h1 class="p-3">Quotes</h1>
+<!--https://www.codeply.com/go/IB5xTytQAq-->
+<style>
+  .min-width-460-md {
+    min-width: 460px;
+  }
+</style>
+<div class="container w-25 m-0 min-width-460-md">
+    <form method="post">
+        <div class="p-3">
+            <label for="numAdults" class="form-label">Number of adults</label>
+            <input type="number" class="form-control" min="0" name="numAdults" autofocus></input>
+        </div>
+        <div class="p-3">
+            <label for="numChildren" class="form-label">Number of children</label>
+            <input type="number" class="form-control" min="0" name="numChildren" autofocus></input>
+        </div>
+        <div class="p-3"><button type="submit" class="btn btn-primary">Submit</button></div>
+    </form>
 </div>
-<form method="post">
-    <div class="p-3">
-        <label for="numAdults" class="form-label">Number of adults</label>
-        <input type="text" class="form-control" name="numAdults" autofocus></input>
-    </div>
-    <div class="p-3">
-        <label for="numChildren" class="form-label">Number of children</label>
-        <input type="text" class="form-control" name="numChildren" autofocus></input>
-    </div>
-    <div class="p-3"><button type="submit" class="btn btn-primary">Submit</button></div>
-</form>
 {% endblock %}
