@@ -5,24 +5,38 @@
 {% endblock %}
 
 {% block content %}
+
+<style>
+.hover:hover {
+    text-decoration: none;
+    background-color: aquamarine;
+}
+</style>
+
 <h1 class="p-3">Contact</h1>
-<div class="container mt-5">
+<div class="container p-3">
   <div class="row">
-    <div class="col-sm-4">
-      <h3>Column 1</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+    <div class="col-sm-3">
+        <h3>The Great Hall</h3>
+        <p><b>Great Hall Venue Manager:</b></p><p>Jack Huang</p>
+        <p><b>Email:</b><a href="mailto:440984240@student.sbhs.nsw.edu.au?subject=The%20Great%20Hall"><img class="hover" src={{ url_for("static", filename="Mail.png") }} width="30"></a></p> <p style="font-size: medium"><a class="hover" href="mailto:440984240@student.sbhs.nsw.edu.au?subject=The%20Great%20Hall">440984240@student.sbhs.nsw.edu.au</a></p>
     </div>
-    <div class="col-sm-4">
-      <h3>Column 2</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+    <div class="col-sm-3">
+        <h3>Fairland Pavilion</h3>
+        <p><b>Great Hall Venue Manager:</b></p><p>Jack Huang</p>
+        <p><b>Email:</b><a href="mailto:440984240@student.sbhs.nsw.edu.au?subject=Fairland%20Pavilion"><img class="hover" src={{ url_for("static", filename="Mail.png") }} width="30"></a></p> <p style="font-size: medium"><a class="hover" href="mailto:440984240@student.sbhs.nsw.edu.au?subject=Fairland%20Pavilion">440984240@student.sbhs.nsw.edu.au</a></p>
     </div>
-    <div class="col-sm-4">
-      <h3>Column 3</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+    <div class="col-sm-3">
+        <h3>The Otterside Centre</h3>
+        <p><b>Great Hall Venue Manager:</b></p><p>Jack Huang</p>
+        <p><b>Email:</b><a href="mailto:440984240@student.sbhs.nsw.edu.au?subject=The%20Otterside%20Centre"><img class="hover" src={{ url_for("static", filename="Mail.png") }} width="30"></a></p> <p style="font-size: medium"><a class="hover" href="mailto:440984240@student.sbhs.nsw.edu.au?subject=The%20Otterside%20Centre">440984240@student.sbhs.nsw.edu.au</a></p>
+    </div>
+    <div class="col-sm-3">
+        <h3>UTS Gymnasium</h3>
+        <p><b>Great Hall Venue Manager:</b></p><p>Jack Huang</p>
+        <p><b>Email:</b><a href="mailto:440984240@student.sbhs.nsw.edu.au?subject=UTS%20Gymnasium"><img class="hover"  src={{ url_for("static", filename="Mail.png") }} width="30"></a></p> <p style="font-size: medium"><a class="hover" href="mailto:440984240@student.sbhs.nsw.edu.au?subject=UTS%20Gymnasium">440984240@student.sbhs.nsw.edu.au</a></p>
     </div>
   </div>
 </div>
+
 {% endblock %}
