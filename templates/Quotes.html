@@ -12,17 +12,26 @@
     min-width: 460px;
   }
 </style>
+<h3 class="px-3">The Great Hall Quote</h3>
 <div class="container w-25 m-0 min-width-460-md">
     <form method="post">
-        <div class="p-3">
-            <label for="numAdults" class="form-label">Number of adults</label>
-            <input type="number" class="form-control" min="0" name="numAdults" autofocus></input>
+        <div class="p-1">
+            <p>How many days are you booking for?</p>
+            <input type="number" class="form-control" min="0" name="days" autofocus></input>
+            <label for="days" class="form-label" style="font-size: small">Venue hire for the great hall can only be booked in 24 hr periods</label>
         </div>
-        <div class="p-3">
-            <label for="numChildren" class="form-label">Number of children</label>
-            <input type="number" class="form-control" min="0" name="numChildren" autofocus></input>
+        <div class="p-1">
+            <p>Pay for Cleaning?
+                <input type="checkbox" name="cleaning" autofocus></input>
+                <label for="cleaning" class="form-label" style="font-size: small">If great hall is left in unsatisfactory state, you may incur this fee</label>
+            </p>
+
         </div>
-        <div class="p-3"><button type="submit" class="btn btn-primary">Submit</button></div>
+        <div class="p-1">
+            <label for="days" class="form-label">How many days are you booking?</label>
+            <input type="number" class="form-control" min="0" name="days" autofocus></input>
+        </div>
+        <div class="p-1"><button type="submit" class="btn btn-primary">Submit</button></div>
     </form>
 </div>
 {% endblock %}

@@ -1,5 +1,4 @@
-def totalCost(numAdults, numChildren):
-    adultsTotalPrice = numAdults * 17.5
-    childrenTotalPrice = numAdults * 9
-    totalPrice = adultsTotalPrice + childrenTotalPrice
+def totalCost(days):
+
+    totalPrice = days * 1750
     return totalPrice

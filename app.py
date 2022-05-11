@@ -16,12 +16,12 @@ def home_page():  # put application's code here
 def quotes_page():  # put application's code here
     if request.method == 'POST':
         try:
-            adults = int(request.form['numAdults'])
-            children = int(request.form['numChildren'])
-            total = totalCost(adults, children)
+            days = int(request.form['days'])
+            cleaning = bool(request.form['cleaning'])
+            total = totalCost(days)
             return render_template('Result.html',
-                                   adults=adults,
-                                   children=children,
+                                   days=days,
+                                   cleaning=cleaning,
                                    total=total
                                    )
         except Exception:
